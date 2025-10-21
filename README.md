@@ -1,10 +1,10 @@
-# Group assignment 2.1
+# Group assignment 2.1: simulation of transport of pollutant in rivers
 
 *[CEGM1000 MUDE](http://mude.citg.tudelft.nl/)*
 
-*Written by: `<author(s)>`*
+*Written by: Marcel Zijlema*
 
-*Due: `<day of week>`, `<month>` `<day>`, `<year>`.*
+*Due: Friday, November 15, 2025*
 
 You can access this assignment with the following link: `classroom.github.com/a/<xxxxxxx>`.
 
