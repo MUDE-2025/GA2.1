@@ -41,9 +41,9 @@ and the forward Euler scheme are sufficiently accurate. Explain your findings ba
 
 **Question 2.4**
 
-*Which of the two contributions to numerical diffusion has the largest impact?
+*Which of the two contributions to numerical diffusion has the largest impact?*
 - the first order upwind scheme or
-- the $\theta-$method*
+- the $\theta-$method
 
 **Question 2.5**
 
