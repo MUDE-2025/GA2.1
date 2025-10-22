@@ -1,13 +1,18 @@
-# Group assignment 2.1
+# Group assignment 2.1: simulation of transport of pollutant in rivers
 
-*[CEGM1000 MUDE](http://mude.citg.tudelft.nl/)*
-
-*Written by: `<author(s)>`*
-
-*Due: `<day of week>`, `<month>` `<day>`, `<year>`.*
+*Due: Friday, November 14, 2025.*
 
 You can access this assignment with the following link: `classroom.github.com/a/<xxxxxxx>`.
 
-`<This repository contains source file for the assignment and will be used a source for student repositories and in the workbook. Replace this README with appropriate information describing the file types and how it should be submitted in case of a programming or workshop assignment.>`
+This GA2.1 is devoted to computer simulations of propagation and diffusion of a cloud of pollutant in a river.
+For this, we will consider a one-dimensional model based on a time-dependent advection–diffusion equation.
 
-> Copyright 2025 MUDE, Delft University of Technology. This work is licensed under a CC BY 4.0 License
+It is assumed that you have already completed WS 2.1 and also read Chapter *Numerical Methods for PDEs* of the MUDE book in preparation.
+
+All tasks for this GA will be performed in the following Jupyter notebook [grp09.ipynb](./grp09.ipynb).
+These tasks are divided over three parts. For each part, please answer the questions in the [report.md](./report.md).
+You may copy the answers from the notebook's tasks directly.
+
+Your report (in Markdown format) will be graded.
+
+> By Marcel Zijlema, Delft University of Technology. CC BY 4.0, more info [on the Credits page of Workbook](https://mude.citg.tudelft.nl/workbook-2025/credits.html).
