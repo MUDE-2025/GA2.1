@@ -1,6 +1,6 @@
 # Group assignment 2.1: simulation of transport of pollutant in rivers
 
-*Due: Friday, November 15, 2025.*
+*Due: Friday, November 14, 2025.*
 
 You can access this assignment with the following link: `classroom.github.com/a/<xxxxxxx>`.
 
