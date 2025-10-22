@@ -4,7 +4,7 @@
 
 You can access this assignment with the following link: `classroom.github.com/a/<xxxxxxx>`.
 
-This GA2.1 is devoted to computer simulations of propagation and diffusion of a cloud of pollutant in rivers.
+This GA2.1 is devoted to computer simulations of propagation and diffusion of a cloud of pollutant in a river.
 For this, we will consider a one-dimensional model based on a time-dependent advection–diffusion equation.
 
 It is assumed that you have already completed WS 2.1 and also read Chapter *Numerical Methods for PDEs* of the MUDE book in preparation.
