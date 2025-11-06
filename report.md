@@ -48,7 +48,7 @@ For what value of $\theta$ is there no numerical diffusion?
 
 Which of the two contributions to numerical diffusion has the largest impact?
 - the first order upwind scheme or
-- the $\theta-$method
+- the $\theta$-method
 
 **Question 8**
 
@@ -80,7 +80,7 @@ Provide here your explanation and conclusions based on your findings.
 
 **Question 12**
 
-Provide a figure that shows three stable numerical solutions of the advection-diffusion equation with $v= 0.35$ m/s and $K = 55$ m$^2$/s, namely,
+Provide a figure that shows three stable numerical solutions of the advection-diffusion equation with $v= 0.35$ m/s and $K = 55$ m<sup>2</sup>/s, namely,
 - the one obtained from Crank-Nicolson with central differences (Task 3.1),
 - the one obtained from stable FTCS scheme (Task 3.3), and
 - the one obtained from stable FTBS scheme (Task 3.5).
