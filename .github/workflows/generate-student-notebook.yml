@@ -194,7 +194,7 @@ jobs:
                   notebook = nbformat.read(f, as_version=4)
 
                 # Execute the notebook
-                ep = ExecutePreprocessor(timeout=60, kernel_name='python3')
+                ep = ExecutePreprocessor(timeout=180, kernel_name='python3')
                 ep.preprocess(notebook, {'metadata': {'path': root}})
 
                 # Save the executed notebook
