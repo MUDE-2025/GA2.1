@@ -4,7 +4,7 @@
 
 ## Part I
 
-**Question 1**
+**Question 1** (1 pt)
 
 Which expression did you reach for the truncation error of the Crank-Nicolson scheme?
 
@@ -60,7 +60,7 @@ so that the first two colored terms can be cancelled.
 
 % solution_end
 
-**Question 2**
+**Question 2** (0.5 pt)
 
 Given the test equation
 
@@ -91,7 +91,7 @@ Therefore, we required for the above test equation that $\lambda < 0$.
 
 % solution_end
 
-**Question 3**
+**Question 3** (1 pt)
 
 Provide a brief explanation with two figures from Tasks 1.3 and 1.4 on how you arrived at the final time steps of both Crank-Nicolson and forward Euler schemes in such a way that they are sufficiently accurate.
 Base your explanation on the concept of *order of accuracy*. Include any relevant quantitative values and graphs.
@@ -121,7 +121,7 @@ See also the following figure of [Task 2.1](https://files.mude.citg.tudelft.nl/G
 
 % solution_end
 
-**Question 4**
+**Question 4** (0.5 pt)
 
 Which of the schemes has the most numerical diffusion?
 
@@ -131,7 +131,7 @@ The BTCS scheme. (This is due to the backward Euler scheme.)
 
 % solution_end
 
-**Question 5**
+**Question 5** (0.5 pt)
 
 For what value of $\theta$ is the numerical diffusion the largest?
 
@@ -141,7 +141,7 @@ $\theta = 1$. (One can proof that this value corresponding to backward Euler pro
 
 % solution_end
 
-**Question 6**
+**Question 6** (0.5 pt)
 
 For what value of $\theta$ is there no numerical diffusion?
 
@@ -151,7 +151,7 @@ $\theta = \frac12$. (This is general the case.)
 
 % solution_end
 
-**Question 7**
+**Question 7** (0.5 pt)
 
 Which of the two contributions to numerical diffusion has the largest impact?
 - the first order upwind scheme or
@@ -163,7 +163,7 @@ The $\theta$-method. (This is general the case.)
 
 % solution_end
 
-**Question 8**
+**Question 8** (0.5 pt)
 
 Which of the schemes gives a non-negative solution?
 
@@ -175,7 +175,7 @@ The FTBS scheme. (Note: other schemes produce negative values in the front of th
 
 ## Part III
 
-**Question 9**
+**Question 9** (1 pt)
 
 Provide here a figure of the results according to Task 3.1.
 In your answer, comment on the cases without and with diffusion include the corresponding values of $K$.
@@ -197,7 +197,7 @@ Also note that this scheme has no numerical diffusion so the smoothing is caused
 
 % solution_end
 
-**Question 10**
+**Question 10** (1 pt)
 
 Provide here two figures from Tasks 3.2 and 3.3, respectively.
 
@@ -244,7 +244,7 @@ and the corresponding solution is plotted above.
 
 % solution_end
 
-**Question 11**
+**Question 11** (1 pt)
 
 Provide here two figures from Tasks 3.4 and 3.5, respectively.
 
@@ -299,7 +299,7 @@ So, the solution obtained with $\Delta t = 90.9$ s is thus unstable but the solu
 
 % solution_end
 
-**Question 12**
+**Question 12** (1 pt)
 
 Provide a figure that shows three stable numerical solutions of the advection-diffusion equation with $v= 0.35$ m/s and $K = 55$ m<sup>2</sup>/s, namely,
 - the one obtained from Crank-Nicolson with central differences (Task 3.1),
