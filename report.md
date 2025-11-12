@@ -92,15 +92,8 @@ Provide a brief explanation with two figures from Tasks 1.3 and 1.4 on how you a
 Base your explanation on the concept of *order of accuracy*.
 
 % solution_start
-The solution to the advection-diffusion equation obtained with the Crank-Nicolson (trapezoidal rule) is depicted in the following graph.
-```{figure} https://files.mude.citg.tudelft.nl/GA21_task13.png
----
-scale: 75%
-name: task13
-align: center
----
-Two numerical solutions produced by the trapezoidal rule with different time steps.
-```
+The solution to the advection-diffusion equation obtained with the Crank-Nicolson (trapezoidal rule) is depicted in the following
+[graph](https://files.mude.citg.tudelft.nl/GA21_task13.png).
 
 The final time step with which the solution has converged was $\Delta t = 500$ s, corresponding to Courant number $\sigma = 2.5$.
 
