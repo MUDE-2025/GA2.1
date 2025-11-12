@@ -163,7 +163,7 @@ Provide here a figure of the results according to Task 3.1.
 What is the mesh P&eacute;clet number?
 
 % solution_start
-![Task 3.1]https://files.mude.citg.tudelft.nl/GA21_task31.png).
+The figure for Task 3.1 is plotted [here]https://files.mude.citg.tudelft.nl/GA21_task31.png).
 
 The case without diffusion ($K=0$) represents a propagated substance along the river as shown by the green curve.
 Its shape is fixed throughout the propagation. However, the Crank-Nicolson scheme is not able to conserve this block-shaped profile.
@@ -172,7 +172,7 @@ The associated numerical solution contains wiggles as the scheme does not have n
 The case with diffusion ($K = 55$ m<sup>2</sup>/s) represents a propagated substance while it spreads in the river as time proceeds.
 So its shape becomes more smooth during its journey through the river and also takes the shape of a Gaussian bell curve.
 
-The Crank-Nicolson scheme seems to be able to reproduce this curve (see blue curve) because the mesh P&eacute;clet number = 0.64 is less than 2.
+The Crank-Nicolson scheme seems to be able to reproduce this curve (see blue curve) because the mesh P&eacute;clet number = $0.35 \times 100 / 55$ = 0.64 is less than 2.
 Also note that this scheme has no numerical diffusion so the smoothing is caused solely by physical diffusion.
 % solution_end
 
@@ -238,6 +238,7 @@ Answer the following questions.
 
 <!-- -->
 % solution_start
+The answers are:
 1. The Crank-Nicolson scheme because it is second order accurate both in time and space and does not contain numerical diffusion.
 2. The FTCS scheme because the forward Euler scheme produces *negative* amount of diffusion which implies a larger maximum.
 % solution_end
