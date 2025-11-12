@@ -8,9 +8,10 @@
 
 Which expression did you reach for the truncation error of the Crank-Nicolson scheme?
 
-Copy here your answer of Task 1.1.
+Copy here your answer of Task 1.1. Including the mathematical formulations is sufficient, but you may want to add comments on what was done for clarity. 
 
 % solution_start
+
 First, we replace the numerical solution $y^n$ by the exact one, that is, $y(t_n)$. Hence, we consider the following equation for
 the error analysis
 
@@ -56,6 +57,7 @@ $$
 $$
 
 so that the first two colored terms can be cancelled.
+
 % solution_end
 
 **Question 2**
@@ -67,10 +69,12 @@ $$
 $$
 
 Why does $\lambda$ have to be negative?
+Include in your answer what happens to the solution when  $\lambda > 0$ and  $\lambda < 0$.
 
 Write your answer here.
 
 % solution_start
+
 The solution of the test equation is given by
 
 $$
@@ -84,14 +88,16 @@ This implies that the test equation with $\lambda > 0$ is an ill-posed problem. 
 
 On the other hand, if $\lambda < 0$, then $y(t) \rightarrow 0$ for $t \rightarrow \infty$, so that the solution remains stable.
 Therefore, we required for the above test equation that $\lambda < 0$.
+
 % solution_end
 
 **Question 3**
 
 Provide a brief explanation with two figures from Tasks 1.3 and 1.4 on how you arrived at the final time steps of both Crank-Nicolson and forward Euler schemes in such a way that they are sufficiently accurate.
-Base your explanation on the concept of *order of accuracy*.
+Base your explanation on the concept of *order of accuracy*. Include any relevant quantitative values and graphs.
 
 % solution_start
+
 The solution to the advection-diffusion equation obtained with the Crank-Nicolson (trapezoidal rule) is depicted in the following
 [graph](https://files.mude.citg.tudelft.nl/GA21_task13.png).
 
@@ -101,6 +107,7 @@ With respect to the forward Euler scheme, its solution is plotted
 [here](https://files.mude.citg.tudelft.nl/GA21_task14.png).
 
 The final solution was obtained with $\Delta t = 20$ s (the corresponding Courant number is 0.1). Even with that small time step / Courant number the solution is still not *converged* (see the difference in color near the maximum of the profile). This implies that the order of accuracy of the forward Euler scheme is lower than that of the trapezoidal rule. Indeed, the latter scheme is second order in time while the former is first order accurate.
+
 % solution_end
 
 ## Part II
@@ -109,7 +116,9 @@ The following five questions are related to Task 2.1 of the notebook.
 You may copy your answers from this task directly.
 
 % solution_start
+
 See also the following figure of [Task 2.1](https://files.mude.citg.tudelft.nl/GA21_task21.png).
+
 % solution_end
 
 **Question 4**
@@ -117,7 +126,9 @@ See also the following figure of [Task 2.1](https://files.mude.citg.tudelft.nl/G
 Which of the schemes has the most numerical diffusion?
 
 % solution_start
+
 The BTCS scheme. (This is due to the backward Euler scheme.)
+
 % solution_end
 
 **Question 5**
@@ -125,7 +136,9 @@ The BTCS scheme. (This is due to the backward Euler scheme.)
 For what value of $\theta$ is the numerical diffusion the largest?
 
 % solution_start
+
 $\theta = 1$. (One can proof that this value corresponding to backward Euler produces the most diffusion.)
+
 % solution_end
 
 **Question 6**
@@ -133,7 +146,9 @@ $\theta = 1$. (One can proof that this value corresponding to backward Euler pro
 For what value of $\theta$ is there no numerical diffusion?
 
 % solution_start
+
 $\theta = \frac12$. (This is general the case.)
+
 % solution_end
 
 **Question 7**
@@ -143,7 +158,9 @@ Which of the two contributions to numerical diffusion has the largest impact?
 - the $\theta$-method
 
 % solution_start
+
 The $\theta$-method. (This is general the case.)
+
 % solution_end
 
 **Question 8**
@@ -151,7 +168,9 @@ The $\theta$-method. (This is general the case.)
 Which of the schemes gives a non-negative solution?
 
 % solution_start
+
 The FTBS scheme. (Note: other schemes produce negative values in the front of the box-profile!)
+
 % solution_end
 
 ## Part III
@@ -159,10 +178,11 @@ The FTBS scheme. (Note: other schemes produce negative values in the front of th
 **Question 9**
 
 Provide here a figure of the results according to Task 3.1.
-
+In your answer, comment on the cases without and with diffusion include the corresponding values of $K$.
 What is the mesh P&eacute;clet number?
 
 % solution_start
+
 The figure for Task 3.1 is plotted [here](https://files.mude.citg.tudelft.nl/GA21_task31.png).
 
 The case without diffusion ($K=0$) represents a propagated substance along the river as shown by the green curve.
@@ -174,6 +194,7 @@ So its shape becomes more smooth during its journey through the river and also t
 
 The Crank-Nicolson scheme seems to be able to reproduce this curve (see blue curve) because the mesh P&eacute;clet number = $0.35 \times 100 / 55$ = 0.64 is less than 2.
 Also note that this scheme has no numerical diffusion so the smoothing is caused solely by physical diffusion.
+
 % solution_end
 
 **Question 10**
@@ -181,26 +202,32 @@ Also note that this scheme has no numerical diffusion so the smoothing is caused
 Provide here two figures from Tasks 3.2 and 3.3, respectively.
 
 % solution_start
+
 The FTCS solution of Task 3.2 is plotted
 [here](https://files.mude.citg.tudelft.nl/GA21_task32.png) which is unstable.
 
 The FTCS solution of Task 3.3 is plotted
 [here](https://files.mude.citg.tudelft.nl/GA21_task33.png) which is stable.
+
 % solution_end
 
 Derive the stability limit for the FTCS scheme. Show your derivation!
 
 % solution_start
+
 See the MUDE book. The stability condition is given by
 
 $$
   \frac{K\Delta t}{\Delta x^2} \leq \frac12
 $$
+
 % solution_end
 
 Provide here your explanation and conclusions based on your findings.
+Include any calculations you made to reach your conclusions, and any recommendations for modifying any parameters, if at all. 
 
 % solution_start
+
 With $K = 55$ m<sup>2</sup>/s, $\Delta x = 100$ m and $\Delta t = 0.75\Delta x/v = 0.75 \times 100 / 0.35 = 214.3$ s, we obtain
 
 $$
@@ -214,6 +241,7 @@ $$
 $$
 
 and the corresponding solution is plotted above.
+
 % solution_end
 
 **Question 11**
@@ -221,16 +249,19 @@ and the corresponding solution is plotted above.
 Provide here two figures from Tasks 3.4 and 3.5, respectively.
 
 % solution_start
+
 The FTBS solution of Task 3.4 is plotted
 [here](https://files.mude.citg.tudelft.nl/GA21_task34.png) which is unstable.
 
 The FTBS solution of Task 3.5 is plotted
 [here](https://files.mude.citg.tudelft.nl/GA21_task35.png) which is stable.
+
 % solution_end
 
 Derive the stability limit for the FTBS scheme. Show your derivation!
 
 % solution_start
+
 The difference with the FTCS scheme here is the addition of the numerical diffusion which is given by
 
 $$
@@ -243,11 +274,14 @@ For instance, the stability condition is like the previous one except that we no
 $$
   \frac{(K+K_a)\Delta t}{\Delta x^2} \leq \frac12
 $$
+
 % solution_end
 
 Provide here your explanation and conclusions based on your findings.
+Include any calculations you made to reach your conclusions, and any recommendations for modifying any parameters, if at all. 
 
 % solution_start
+
 First, we calculate the amount of numerical diffusion which reads
 
 $$
@@ -262,6 +296,7 @@ $$
 $$
 
 So, the solution obtained with $\Delta t = 90.9$ s is thus unstable but the solution with a time step of smaller than 69 s is stable.
+
 % solution_end
 
 **Question 12**
@@ -272,20 +307,23 @@ Provide a figure that shows three stable numerical solutions of the advection-di
 - the one obtained from stable FTBS scheme (Task 3.5).
 
 % solution_start
+
 The three stable solutions of Tasks 3.1, 3.3 and 3.5 are plotted
 [here](https://files.mude.citg.tudelft.nl/GA21_task36.png).
+
 % solution_end
 
 Answer the following questions.
 
 1. Which of the schemes is the most accurate one? Why?
-2. Which of the numerical solutions has the largest maximum? Why?
+2. Which of the numerical solutions has the largest maximum? Why? You may include numerical values to help illustrate your answer.
 
-<!-- -->
 % solution_start
+
 The answers are:
 1. The Crank-Nicolson scheme because it is second order accurate both in time and space and does not contain numerical diffusion.
 2. The FTCS scheme because the forward Euler scheme produces *negative* amount of diffusion which implies a larger maximum.
+   
 % solution_end
 
 **End of file.**
