@@ -163,7 +163,7 @@ Provide here a figure of the results according to Task 3.1.
 What is the mesh P&eacute;clet number?
 
 % solution_start
-The figure for Task 3.1 is plotted [here]https://files.mude.citg.tudelft.nl/GA21_task31.png).
+The figure for Task 3.1 is plotted [here](https://files.mude.citg.tudelft.nl/GA21_task31.png).
 
 The case without diffusion ($K=0$) represents a propagated substance along the river as shown by the green curve.
 Its shape is fixed throughout the propagation. However, the Crank-Nicolson scheme is not able to conserve this block-shaped profile.
@@ -210,7 +210,7 @@ $$
 This explains the plot of Task 3.2. We should therefore decrease the time step such that the solution becomes stable. It is given by
 
 $$
-  \Delta t = \frac{\Delta x^2}{2K} = \frac{100^2}{110} = 90.9 \text{s}
+  \Delta t = \frac{\Delta x^2}{2K} = \frac{100^2}{2 \times 55} = 90.9 \text{s}
 $$
 
 and the corresponding solution is plotted above.
