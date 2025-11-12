@@ -220,9 +220,49 @@ and the corresponding solution is plotted above.
 
 Provide here two figures from Tasks 3.4 and 3.5, respectively.
 
+% solution_start
+The FTBS solution of Task 3.4 is plotted
+[here](https://files.mude.citg.tudelft.nl/GA21_task34.png) which is unstable.
+
+The FTBS solution of Task 3.5 is plotted
+[here](https://files.mude.citg.tudelft.nl/GA21_task35.png) which is stable.
+% solution_end
+
 Derive the stability limit for the FTBS scheme. Show your derivation!
 
+% solution_start
+The difference with the FTCS scheme here is the addition of the numerical diffusion which is given by
+
+$$
+  K_a = \frac 12 v \Delta x
+$$
+
+Hence, we should consider the *total* diffusion coefficient of $K + K_a$ instead of just the physical diffusion coefficient $K$.
+For instance, the stability condition is like the previous one except that we now have the following condition for FTBS
+
+$$
+  \frac{(K+K_a)\Delta t}{\Delta x^2} \leq \frac12
+$$
+% solution_end
+
 Provide here your explanation and conclusions based on your findings.
+
+% solution_start
+First, we calculate the amount of numerical diffusion which reads
+
+$$
+ K_a = \frac12 v \Delta x = \frac{0.35 \times 100}{2} = 17.5 \text{m}^2/\text{s}
+$$
+
+Furthermore, $K = 55$ m<sup>2</sup>/s, so that the total amount of diffusion is 72.5 m<sup>2</sup>/s.
+The maximum time step for a stable solution is then
+
+$$
+  \Delta t = \frac{\Delta x^2}{2(K+K_a)} = \frac{100^2}{2 \times 72.5} = 69 \text{s}
+$$
+
+So, the solution obtained with $\Delta t = 90.9$ s is thus unstable but the solution with a time step of smaller than 69 s is stable.
+% solution_end
 
 **Question 12**
 
@@ -230,6 +270,11 @@ Provide a figure that shows three stable numerical solutions of the advection-di
 - the one obtained from Crank-Nicolson with central differences (Task 3.1),
 - the one obtained from stable FTCS scheme (Task 3.3), and
 - the one obtained from stable FTBS scheme (Task 3.5).
+
+% solution_start
+The three stable solutions of Tasks 3.1, 3.3 and 3.5 are plotted
+[here](https://files.mude.citg.tudelft.nl/GA21_task36.png).
+% solution_end
 
 Answer the following questions.
 
