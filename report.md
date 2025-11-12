@@ -323,7 +323,7 @@ Answer the following questions.
 The answers are:
 1. The Crank-Nicolson scheme because it is second order accurate both in time and space and does not contain numerical diffusion.
 2. The FTCS scheme because the forward Euler scheme produces *negative* amount of diffusion which implies a larger maximum.
-3. 
+   
 % solution_end
 
 **End of file.**
