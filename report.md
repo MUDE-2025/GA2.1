@@ -97,15 +97,8 @@ The solution to the advection-diffusion equation obtained with the Crank-Nicolso
 
 The final time step with which the solution has converged was $\Delta t = 500$ s, corresponding to Courant number $\sigma = 2.5$.
 
-With respect to the forward Euler scheme, its solution is plotted here.
-```{figure} https://files.mude.citg.tudelft.nl/GA21_task14.png
----
-scale: 75%
-name: task14
-align: center
----
-Two numerical solutions produced by the forward Euler scheme with different time steps.
-```
+With respect to the forward Euler scheme, its solution is plotted
+[here](https://files.mude.citg.tudelft.nl/GA21_task14.png).
 
 The final solution was obtained with $\Delta t = 20$ s (the corresponding Courant number is 0.1). Even with that small time step / Courant number the solution is still not *converged* (see the difference in color near the maximum of the profile). This implies that the order of accuracy of the forward Euler scheme is lower than that of the trapezoidal rule. Indeed, the latter scheme is second order in time while the former is first order accurate.
 % solution_end
@@ -116,15 +109,7 @@ The following five questions are related to Task 2.1 of the notebook.
 You may copy your answers from this task directly.
 
 % solution_start
-Below are the solutions depicted for this part.
-```{figure} https://files.mude.citg.tudelft.nl/GA21_task21.png
----
-scale: 75%
-name: task21
-align: center
----
-Various solutions according to Task 2.1.
-```
+See also the following figure of [Task 2.1](https://files.mude.citg.tudelft.nl/GA21_task21.png).
 % solution_end
 
 **Question 4**
@@ -178,14 +163,7 @@ Provide here a figure of the results according to Task 3.1.
 What is the mesh P&eacute;clet number?
 
 % solution_start
-```{figure} https://files.mude.citg.tudelft.nl/GA21_task31.png
----
-scale: 75%
-name: task31
-align: center
----
-Various solutions according to Task 3.1.
-```
+![Task 3.1]https://files.mude.citg.tudelft.nl/GA21_task31.png).
 
 The case without diffusion ($K=0$) represents a propagated substance along the river as shown by the green curve.
 Its shape is fixed throughout the propagation. However, the Crank-Nicolson scheme is not able to conserve this block-shaped profile.
@@ -203,25 +181,11 @@ Also note that this scheme has no numerical diffusion so the smoothing is caused
 Provide here two figures from Tasks 3.2 and 3.3, respectively.
 
 % solution_start
-The FTCS solution of Task 3.2 is plotted here which is unstable.
-```{figure} https://files.mude.citg.tudelft.nl/GA21_task32.png
----
-scale: 75%
-name: task32
-align: center
----
-The unstable FTCS solution of Task 3.2.
-```
+The FTCS solution of Task 3.2 is plotted
+[here](https://files.mude.citg.tudelft.nl/GA21_task32.png) which is unstable.
 
-The FTCS solution of Task 3.3 is plotted here which is stable.
-```{figure} https://files.mude.citg.tudelft.nl/GA21_task33.png
----
-scale: 75%
-name: task33
-align: center
----
-The stable FTCS solution of Task 3.3.
-```
+The FTCS solution of Task 3.3 is plotted
+[here](https://files.mude.citg.tudelft.nl/GA21_task33.png) which is stable.
 % solution_end
 
 Derive the stability limit for the FTCS scheme. Show your derivation!
@@ -230,14 +194,14 @@ Derive the stability limit for the FTCS scheme. Show your derivation!
 See the MUDE book. The stability condition is given by
 
 $$
-  \frac{K\,\Delta t}{\Delta x^2} \leq \frac12
+  \frac{K\Delta t}{\Delta x^2} \leq \frac12
 $$
 % solution_end
 
 Provide here your explanation and conclusions based on your findings.
 
 % solution_start
-With $K = 55$ m<sup>2</sup>/s, $\Delta x = 100$ m and $\Delta t = 0.75\,\Delta x/v = 0.75 \times 100 / 0.35 = 214.3$ s, we obtain
+With $K = 55$ m<sup>2</sup>/s, $\Delta x = 100$ m and $\Delta t = 0.75\Delta x/v = 0.75 \times 100 / 0.35 = 214.3$ s, we obtain
 
 $$
   \frac{55 \times 214.3}{100^2} = 1.179 > 0.5
@@ -246,7 +210,7 @@ $$
 This explains the plot of Task 3.2. We should therefore decrease the time step such that the solution becomes stable. It is given by
 
 $$
-  \Delta t = \frac{\Delta x^2}{2\,K} = \frac{100^2}{110} = 90.9 \, \text{s}
+  \Delta t = \frac{\Delta x^2}{2K} = \frac{100^2}{110} = 90.9 \text{s}
 $$
 
 and the corresponding solution is plotted above.
@@ -272,8 +236,8 @@ Answer the following questions.
 1. Which of the schemes is the most accurate one? Why?
 2. Which of the numerical solutions has the largest maximum? Why?
 
+<!-- -->
 % solution_start
-{:start="1"}
 1. The Crank-Nicolson scheme because it is second order accurate both in time and space and does not contain numerical diffusion.
 2. The FTCS scheme because the forward Euler scheme produces *negative* amount of diffusion which implies a larger maximum.
 % solution_end
