@@ -16,5 +16,6 @@ Your report (in Markdown format) will be graded.
 
 The questions in the notebook. unless stated otherwise, are meant to guide you. Some questions in the report refer directly to the tasks in the notebook. In these cases you may copy the answers from the notebook's tasks directly.
 
+You can preview this assignment on https://mude.citg.tudelft.nl/workbook-2025/assignments/GA2.1/README.html. After the deadline, this link will include solutions. The preview of the assignment version is shared here: https://mude.citg.tudelft.nl/workbook-2025/no_solutions/assignments/GA2.1/README.html. Pages can be downloaded as `.md` and `.ipynb` files to your computer.
 
 > By Marcel Zijlema, Delft University of Technology. CC BY 4.0, more info [on the Credits page of Workbook](https://mude.citg.tudelft.nl/workbook-2025/credits.html).
