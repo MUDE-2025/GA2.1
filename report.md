@@ -58,6 +58,8 @@ $$
 
 so that the first two colored terms can be cancelled.
 
+**(1pt):** the essence is showing that y'' = \lambda y' has been used in the Taylor expansion. If this was not shown, then 0.5 pt.
+
 % solution_end
 
 **Question 2** (0.5 pt)
@@ -89,6 +91,8 @@ This implies that the test equation with $\lambda > 0$ is an ill-posed problem. 
 On the other hand, if $\lambda < 0$, then $y(t) \rightarrow 0$ for $t \rightarrow \infty$, so that the solution remains stable.
 Therefore, we required for the above test equation that $\lambda < 0$.
 
+**(0.5pt):** showing either by formula's or graph is okay
+
 % solution_end
 
 **Question 3** (1 pt)
@@ -107,6 +111,8 @@ With respect to the forward Euler scheme, its solution is plotted
 [here](https://files.mude.citg.tudelft.nl/GA21_task14.png).
 
 The final solution was obtained with $\Delta t = 20$ s (the corresponding Courant number is 0.1). Even with that small time step / Courant number the solution is still not *converged* (see the difference in color near the maximum of the profile). This implies that the order of accuracy of the forward Euler scheme is lower than that of the trapezoidal rule. Indeed, the latter scheme is second order in time while the former is first order accurate.
+
+**(1 pt):** only showing graphs is 0.5 pt, while including an explanation is another 0.5 pt
 
 % solution_end
 
@@ -171,6 +177,9 @@ Which of the schemes gives a non-negative solution?
 
 The FTBS scheme. (Note: other schemes produce negative values in the front of the box-profile!)
 
+
+**For all in Part 2:** no explanation is needed, just numbers and/or name of the scheme.
+
 % solution_end
 
 ## Part III
@@ -194,6 +203,8 @@ So its shape becomes more smooth during its journey through the river and also t
 
 The Crank-Nicolson scheme seems to be able to reproduce this curve (see blue curve) because the mesh P&eacute;clet number = $0.35 \times 100 / 55$ = 0.64 is less than 2.
 Also note that this scheme has no numerical diffusion so the smoothing is caused solely by physical diffusion.
+
+**(1pt):** at least an explanation of the notion of physical diffusion must be included, if not then 0.5 pt less
 
 % solution_end
 
@@ -241,6 +252,8 @@ $$
 $$
 
 and the corresponding solution is plotted above.
+
+**(1pt):** if derivation has not been given then 0.5 pt less
 
 % solution_end
 
@@ -297,6 +310,9 @@ $$
 
 So, the solution obtained with $\Delta t = 90.9$ s is thus unstable but the solution with a time step of smaller than 69 s is stable.
 
+**(1pt):** idem dito, however, there is an alternative to show stability by requiring non-negative solutions, which also okay!
+
+
 % solution_end
 
 **Question 12** (1 pt)
@@ -323,6 +339,8 @@ Answer the following questions.
 The answers are:
 1. The Crank-Nicolson scheme because it is second order accurate both in time and space and does not contain numerical diffusion.
 2. The FTCS scheme because the forward Euler scheme produces *negative* amount of diffusion which implies a larger maximum.
+
+**(1pt):** the essence is the second part of the question, namely, "negative amount of diffusion" which is graded with 0.5 pt.
    
 % solution_end
 
