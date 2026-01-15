@@ -103,12 +103,12 @@ Base your explanation on the concept of *order of accuracy*. Include any relevan
 % solution_start
 
 The solution to the advection-diffusion equation obtained with the Crank-Nicolson (trapezoidal rule) is depicted in the following
-[graph](https://files.mude.citg.tudelft.nl/GA21_task13.png).
+[graph](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task13.png).
 
 The final time step with which the solution has converged was $\Delta t = 500$ s, corresponding to Courant number $\sigma = 2.5$.
 
 With respect to the forward Euler scheme, its solution is plotted
-[here](https://files.mude.citg.tudelft.nl/GA21_task14.png).
+[here](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task14.png).
 
 The final solution was obtained with $\Delta t = 20$ s (the corresponding Courant number is 0.1). Even with that small time step / Courant number the solution is still not *converged* (see the difference in color near the maximum of the profile). This implies that the order of accuracy of the forward Euler scheme is lower than that of the trapezoidal rule. Indeed, the latter scheme is second order in time while the former is first order accurate.
 
@@ -123,7 +123,7 @@ You may copy your answers from this task directly.
 
 % solution_start
 
-See also the following figure of [Task 2.1](https://files.mude.citg.tudelft.nl/GA21_task21.png).
+See also the following figure of [Task 2.1](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task21.png).
 
 % solution_end
 
@@ -192,7 +192,7 @@ What is the mesh P&eacute;clet number?
 
 % solution_start
 
-The figure for Task 3.1 is plotted [here](https://files.mude.citg.tudelft.nl/GA21_task31.png).
+The figure for Task 3.1 is plotted [here](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task31.png).
 
 The case without diffusion ($K=0$) represents a propagated substance along the river as shown by the green curve.
 Its shape is fixed throughout the propagation. However, the Crank-Nicolson scheme is not able to conserve this block-shaped profile.
@@ -215,10 +215,10 @@ Provide here two figures from Tasks 3.2 and 3.3, respectively.
 % solution_start
 
 The FTCS solution of Task 3.2 is plotted
-[here](https://files.mude.citg.tudelft.nl/GA21_task32.png) which is unstable.
+[here](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task32.png) which is unstable.
 
 The FTCS solution of Task 3.3 is plotted
-[here](https://files.mude.citg.tudelft.nl/GA21_task33.png) which is stable.
+[here](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task33.png) which is stable.
 
 % solution_end
 
@@ -264,10 +264,10 @@ Provide here two figures from Tasks 3.4 and 3.5, respectively.
 % solution_start
 
 The FTBS solution of Task 3.4 is plotted
-[here](https://files.mude.citg.tudelft.nl/GA21_task34.png) which is unstable.
+[here](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task34.png) which is unstable.
 
 The FTBS solution of Task 3.5 is plotted
-[here](https://files.mude.citg.tudelft.nl/GA21_task35.png) which is stable.
+[here](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task35.png) which is stable.
 
 % solution_end
 
@@ -325,7 +325,7 @@ Provide a figure that shows three stable numerical solutions of the advection-di
 % solution_start
 
 The three stable solutions of Tasks 3.1, 3.3 and 3.5 are plotted
-[here](https://files.mude.citg.tudelft.nl/GA21_task36.png).
+[here](https://github.com/TUDelft-MUDE/source-files/raw/main/file/GA21_task36.png).
 
 % solution_end
 
