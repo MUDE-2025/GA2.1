@@ -2,7 +2,7 @@
 
 *Due: Friday, November 14, 2025.*
 
-You can access this assignment with the following link: `https://classroom.github.com/a/H91mqZzY`.
+You can access this assignment with the following link: `https://classroom.github.com/a/H91mqZzY`. If you don't want to make this assignment as part of a grade, access the assignment here: https://github.com/MUDE-2025/GA2.1.
 
 This GA2.1 is devoted to computer simulations of propagation and diffusion of a cloud of pollutant in a river.
 For this, we will consider a one-dimensional model based on a time-dependent advection–diffusion equation.
